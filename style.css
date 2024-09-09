@@ -1,0 +1,118 @@
+* {
+  font-family: poppins;
+}
+.container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.left-side {
+  flex: 1;
+  margin-right: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(243, 243, 243, 0.5);
+  line-height: 10px;
+  border-radius: 30px;
+  height: 65vh;
+  width: 20vw;
+  padding: 20px;
+}
+.left-side h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.left-side button {
+  text-align: center;
+}
+button {
+  background: linear-gradient(135deg, #aaeaff, #d7feff);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+button:hover {
+  background: linear-gradient(135deg, #d2d1d2, #a7effc);
+  color: black;
+  box-shadow: 2px 2px 15px rgba(130, 183, 252, 0.3);
+}
+.right-side {
+  backdrop-filter: blur(10px);
+  background: rgba(241, 240, 240, 0.5);
+  padding-top: 20px;
+  border-radius: 30px;
+  width: 20vw;
+  height: 55vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.right-side h1 {
+  font-size: 20px;
+}
+/* Hide message divs by default */
+.message {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: none;
+  width: 95%;
+}
+
+#weather-message {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: none;
+  width: 80%;
+}
+
+/* Theme classes */
+.light-theme {
+  background-color: white;
+  color: black;
+  background-image: url("lightt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dark-theme {
+  background-color: black;
+  color: white;
+  background-image: url("dark.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blue-theme {
+  color: white;
+  background-image: url("blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+.blue-theme {
+  background-color: #007bff;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Web Page</title>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <!-- Left Side: Form Validation -->
+        <div class="left-side">
+          <h1>Form Validation</h1>
+          <br />
+          <br />
+          <form id="user-form">
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" /><br /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" /><br /><br />
+            <center><button type="submit">Submit</button></center>
+          </form>
+          <div id="form-message" class="message"></div>
+        </div>
+
+        <!-- Right Side: Theme and Weather Selectors -->
+        <div class="right-side">
+          <!-- Scenario 1: Theme Selection -->
+          <div>
+            <h1>Theme Selector</h1>
+            <select id="theme-selector">
+              <option value="">Select Theme</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="blue">Blue</option>
+            </select>
+            <div id="theme-message" class="message"></div>
+          </div>
+
+          <!-- Scenario 3: Weather Conditions -->
+          <div>
+            <h1>Weather Selector</h1>
+            <select id="weather-selector">
+              <option value="">Select Weather</option>
+              <option value="sunny">Sunny</option>
+              <option value="rainy">Rainy</option>
+              <option value="snowy">Snowy</option>
+              <option value="cloudy">Cloudy</option>
+            </select>
+            <div id="weather-message" class="message"></div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <script src="index.js"></script>
+  </body>
+</html>
